@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas filter</title>
+	<script type="text/javascript" src="gloomyfishfilter.js"></script>
+	<style type="text/css">
+		#svgContainer {  
+		    width:800px;  
+		    height:480px; 
+		    background-color:#EEEEEE;  
+		}  
+		           
+		#sourceDiv { float: left; border: 2px solid blue}   
+		#targetDiv { float: right;border: 2px solid red}
+	</style>
+</head>
+<body>
+	<h1>HTML Canvas Image Process - By Gloomy Fish</h1>  
+    <div id="svgContainer">  
+        <div id="sourceDiv"> 
+            <img id="source" src="1.png" />  
+        </div>  
+        <div id="targetDiv">  
+            <canvas id="target"></canvas>  
+        </div>  
+    </div>  
+    <div id="btn-group">  
+    	<button type="button" id="default-button">还原</button>
+        <button type="button" id="invert-button">反色</button>  
+        <button type="button" id="adjust-button">灰色调</button>  
+        <button type="button" id="blur-button">模糊</button>  
+        <button type="button" id="relief-button">浮雕</button>  
+        <button type="button" id="diaoke-button">雕刻</button>  
+        <button type="button" id="mirror-button">镜像</button>
+        <input type="text" name="" id="rgba-input" value="18,27,45">
+        <button type="button" id="rgba-button">去色值</button>
+    </div>  
+
+    <script type="text/javascript" src="public.js"></script>
+</body>
+</html>
